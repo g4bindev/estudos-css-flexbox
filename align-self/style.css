@@ -1,0 +1,81 @@
+@charset "UTF-8";
+
+:root {
+    --def-font: monospace, Arial, Helvetica, sans-serif;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+
+}
+
+html, body {
+    background-color: #1d1e20;
+    font-family: var(--def-font);
+    font-size: 1.2em;
+}
+
+body > p {
+    color: white;
+    margin-top: 30px;
+    text-align: center;
+    font-family: var(--def-font);
+}
+
+.container {
+    display: flex;
+    max-width: 420px;
+    padding: 10px;
+    margin: 0 auto;
+    border: 1px solid white;
+}
+
+.container > .item {
+    flex: 1;
+    background-color: tomato;
+    text-align: center;
+    padding: 5px;
+    margin: 10px;
+}
+
+.itemf {
+    padding-top: 30px !important;
+}
+
+.flex-ai01 {
+    align-items: flex-end;
+}
+
+.column {
+    flex-direction: column;
+}
+
+/* As aligns-self são basicamente a mesma coisa que os align-items, com a diferença
+    de que agora elas são um elemento para um item especifico dentro de uma flexbox
+*/
+
+/* CSS ALIGN-SELF FLEX END */
+.flex-as01 {
+    align-self: flex-end;
+}
+
+/* CSS ALIGN SELF FLEX START */
+.flex-as02 {
+    align-self: flex-start;
+}
+
+/* CSS ALIGN SELF CENTER */
+.flex-as03 {
+    align-self: center;
+}
+
+/* CSS ALIGN SELF BASELINE */
+.flex-as04 {
+    align-self: baseline;
+}
+
+/* CSS ALIGN SELF STRETCH */
+.flex-as05 {
+    align-self: stretch;
+}
