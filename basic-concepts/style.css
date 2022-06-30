@@ -1,0 +1,67 @@
+@charset "UTF-8";
+
+:root {
+    --def-font: monospace, Arial, Helvetica, sans-serif;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+
+}
+
+html, body {
+    background-color: #1d1e20;
+    font-family: var(--def-font);
+    font-size: 1.2rem;
+}
+
+body > p {
+    color: white;
+    margin-top: 30px;
+    text-align: center;
+    font-family: var(--def-font);
+}
+
+.container {
+    width: 450px;
+    padding: 10px;
+    margin: 0 auto;
+    border: 1px solid white;
+}
+
+.container > div {
+    background-color: tomato;
+    text-align: center;
+    margin: 10px;
+}
+
+/* CSS FLEXBOX */
+
+.flex-e01 {
+    display: flex;
+}
+
+/* CSS FLEX WRAP */
+
+.flex-e02 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* CSS FLEX-ITEM-1 */
+
+.item2 {
+    flex: 1;
+}
+
+/* A propriedade "flex: [valor];" é uma shorthand (abreviação) de outras 3 propriedades
+    de posicionamento do seu flex item. Exemplo:
+
+    flex: 1 1 0;
+        
+    flex-grow: 1; - primeiro elemento da shorhand flex
+    flex-shrink: 1; - segundo elemento da shorthand
+    flex-basis: 0; - terceiro elemento da shorthand
+        
+*/

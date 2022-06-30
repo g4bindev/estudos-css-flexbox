@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+:root {
+    --def-font: monospace, Arial, Helvetica, sans-serif;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+
+}
+
+html, body {
+    background-color: #1d1e20;
+    font-family: var(--def-font);
+    font-size: 1.2rem;
+}
+
+body > p {
+    color: white;
+    margin-top: 30px;
+    text-align: center;
+    font-family: var(--def-font);
+}
+
+.container {
+    display: flex;
+    width: 450px;
+    padding: 10px;
+    margin: 0 auto;
+    border: 1px solid white;
+}
+
+.container > div {
+    background-color: tomato;
+    text-align: center;
+    margin: 10px;
+}
+
+.item {
+    flex: 1;
+}
+
+/* CSS FLEX-FLOW ROW NOWRAP */
+
+.flex-e01 {
+    flex-flow: row nowrap;
+}
+
+/* CSS FLEX-FLOW ROW WRAP */
+
+.flex-e02 {
+    flex-flow: row wrap;
+}
+
+/* CSS FLEX-FLOW COLUMN NOWRAP */
+
+.flex-e03 {
+    flex-flow: column nowrap;
+}

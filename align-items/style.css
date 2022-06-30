@@ -1,0 +1,124 @@
+@charset "UTF-8";
+
+:root {
+    --def-font: monospace, Arial, Helvetica, sans-serif;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+
+}
+
+html, body {
+    background-color: #1d1e20;
+    font-family: var(--def-font);
+    font-size: 1.2rem;
+}
+
+body > p {
+    color: white;
+    margin-top: 30px;
+    text-align: center;
+    font-family: var(--def-font);
+}
+
+.container {
+    display: flex;
+    max-width: 450px;
+    padding: 10px;
+    margin: 0 auto;
+    border: 1px solid white;
+}
+
+.container > div {
+    background-color: tomato;
+    text-align: center;
+    margin: 10px;
+}
+
+.item {
+    padding: 5px;
+}
+
+/* CSS ALIGN-ITEMS // PADRÃO */
+
+.flex-e01 {
+    align-items: flex-stretch;
+}
+
+/* CSS ALIGN-ITEMS FLEX START */
+
+.flex-e02 {
+    align-items: flex-start;
+}
+
+/* CSS ALIGN-ITEMS FLEX END */
+
+.flex-e03 {
+    align-items: flex-end;
+}
+
+/* CSS ALIGN-ITEMS CENTER */
+
+.flex-e04 {
+    align-items: center;
+}
+
+/* CSS ALIGN-ITEMS BASELINE */
+
+.flex-e05 {
+    align-items: baseline;
+}
+
+.itemf {
+    padding: 30px 30px 5px 30px;
+}
+
+/* CSS ALIGN-ITEMS // COLUMN */
+
+.flexcolumn-e01 {
+    align-items: flex-stretch;
+    flex-direction: column;
+}
+
+/* CSS ALIGN-ITEMS FLEX START // COLUMN */
+
+.flexcolumn-e02 {
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+/* CSS ALIGN-ITEMS FLEX END // COLUMN */
+
+.flexcolumn-e03 {
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+/* CSS ALIGN-ITEMS CENTER // COLUMN */
+
+.flexcolumn-e04 {
+    align-items: center;
+    flex-direction: column;
+}
+
+/* CSS ALIGN-ITEMS BASELINE // COLUMN */
+
+.flexcolumn-e05 {
+    align-items: baseline;
+    flex-direction: column;
+}
+
+/* EXEMPLO DE USO */
+
+.flex-ex {
+    min-height: 400px;
+    align-items: center;
+    justify-content: center;
+}
+
+.item-ex {
+    max-width: 200px;
+    padding: 5px;
+}

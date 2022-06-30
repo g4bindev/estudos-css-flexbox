@@ -1,0 +1,84 @@
+@charset "UTF-8";
+
+:root {
+    --def-font: monospace, Arial, Helvetica, sans-serif;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+
+}
+
+html, body {
+    background-color: #1d1e20;
+    font-family: var(--def-font);
+    font-size: 1.2em;
+}
+
+body > p {
+    color: white;
+    margin-top: 30px;
+    text-align: center;
+    font-family: var(--def-font);
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 420px;
+    height: 400px;
+    padding: 10px;
+    margin: 0 auto;
+    border: 1px solid white;
+}
+
+.container > div {
+    background-color: tomato;
+    text-align: center;
+    margin: 10px;
+}
+
+.item {
+    flex: 1;
+    padding: 5px;
+}
+
+/* CSS ALIGN-CONTENT STRETCH 
+    Para esta função funcionar é preciso que o flex-wrap seja
+    verdadeiro (flex-wrap: wrap;).
+*/
+
+.flex-al01 {
+    align-content: stretch;
+}
+
+/* CSS ALIGN-CONTENT FLEX START */
+
+.flex-al02 {
+    align-content: flex-start;
+}
+
+/* CSS ALIGN-CONTENT FLEX END */
+
+.flex-al03 {
+    align-content: flex-end;
+}
+
+/* CSS ALIGN-CONTENT CENTER */
+
+.flex-al04 {
+    align-content: center;
+}
+
+/* CSS ALIGN-CONTENT SPACE BETWEEN */
+
+.flex-al05 {
+    align-content: space-between;
+}
+
+/* CSS ALIGN-CONTENT SPACE AROUND */
+
+.flex-al06 {
+    align-content: space-around;
+}

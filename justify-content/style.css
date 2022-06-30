@@ -1,0 +1,106 @@
+@charset "UTF-8";
+
+:root {
+    --def-font: monospace, Arial, Helvetica, sans-serif;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+
+}
+
+html, body {
+    background-color: #1d1e20;
+    font-family: var(--def-font);
+    font-size: 1.2rem;
+}
+
+body > p {
+    color: white;
+    margin-top: 30px;
+    text-align: center;
+    font-family: var(--def-font);
+}
+
+.container {
+    display: flex;
+    width: 450px;
+    padding: 10px;
+    margin: 0 auto;
+    border: 1px solid white;
+}
+
+.container > div {
+    background-color: tomato;
+    text-align: center;
+    margin: 10px;
+}
+
+.item {
+    padding: 5px;
+}
+
+/* CSS JUSTYFY-CONTENT */
+
+.flex-e01 {
+    justify-content: flex-start;
+}
+
+/* CSS JUSTYFY-CONTENT FLEX END */
+
+.flex-e02 {
+    justify-content: flex-end;
+}
+
+/* CSS JUSTYFY-CONTENT FLEX CENTER */
+
+.flex-e03 {
+    justify-content: center;
+}
+
+/* CSS JUSTYFY-CONTENT SPACE BETWEEN */
+
+.flex-e04 {
+    justify-content: space-between;
+}
+
+/* CSS JUSTYFY-CONTENT SPACE AROUND */
+
+.flex-e05 {
+    justify-content: space-around;
+}
+
+/* CSS JUSTYFY-CONTENT SPACE AROUND // FLEX 1 */
+
+.flex-e06 {
+    justify-content: space-around;
+}
+
+.itemf {
+    flex: 1;
+}
+
+/* CSS JUSTYFY-CONTENT FLEX START // COLUMN */
+
+.flexcolumn-e01 {
+    min-height: 400px;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+/* CSS JUSTYFY-CONTENT FLEX END // COLUMN */
+
+.flexcolumn-e02 {
+    min-height: 400px;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+/* CSS JUSTYFY-CONTENT CENTER // COLUMN */
+
+.flexcolumn-e03 {
+    min-height: 400px;
+    flex-direction: column;
+    justify-content: center;
+}
